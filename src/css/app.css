@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+.temp-block {
+  margin: 25vh 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.temp-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  border-radius: 100%;
+}
+.temp {
+  color: #fff;
+  font-weight: 300;
+  font-size: 60px;
+}
+.temp-btn-box {
+  display: flex;
+  margin: 30px 0 0;
+}
+.temp-btn-box button {
+  padding: 10px;
+  line-height: 1;
+  border: 1px solid #c3ced3;
+  background: #dfe6e9;
+  width: 100px;
+  font-size: 25px;
+  text-align: center;
+  cursor: pointer;
+  color: #2e2e2e;
+  transition: background,color 0.4s ease;
+}
+.temp-btn-box button:hover {
+  background: #636e72;
+  color: #fff;
+  
+}
+.temp-btn-box .temp-btn-hot {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.temp-btn-box .temp-btn-cold {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-left: 0;
+}
+
+.temp-box {
+  /* background: linear-gradient(180deg, rgba(4,226,255,1) 0%, rgba(4,113,255,1) 15%, rgba(255,205,68,1) 35%, rgba(255,138,5,1) 54%, rgba(255,63,4,1) 78%, rgba(212,0,0,1) 100%);
+  background-position: 0 5%;
+  background-size: 100% 800%;
+  background-repeat: no-repeat; */
+  transition: background 0.4s ease;
+}
+/*color temp*/
+.bfreeze { background: #cee9ff; }
+.bfreeze .temp {
+  color: #000;
+}
+.freeze { background: #38a4fc; }
+.cool { background: #23ccff;}
+.warm { background: #fad05c;}
+.hot { background: #ff8a05;}
+.superhot { background: #ec5109;}
+.burnhot { background: #d40000;}
